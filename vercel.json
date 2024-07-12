@@ -3,9 +3,8 @@
   "builds": [
     { "src": "app.py",
       "use": "@vercel/python",
-      "env": {
-	 "PYTHONPATH": ".",
-	 "REQUIREMENTS_TXT": "requirements.txt"
+      "config": {
+	 "requirements": "requirements.txt"
       }
     }
   ],
